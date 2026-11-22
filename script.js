@@ -65,7 +65,7 @@ bookingForm.addEventListener("submit", (event) => {
 
     // Өзүңүздүн WhatsApp номериңизди жазыңыз:
     // Өлкө коду менен, + белгисиз, мисалы 996XXXXXXXXX
-    const whatsappNumber = "996500644600";
+    const whatsappNumber = "996551144351";
 
     const whatsappUrl =
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
@@ -85,40 +85,4 @@ bookingForm.addEventListener("submit", (event) => {
     sendButton.href = whatsappUrl;
     sendButton.target = "_blank";
     sendButton.rel = "noopener noreferrer";
-});
-
-const bookingForm = document.getElementById("bookingForm");
-
-bookingForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const eventType = document.getElementById("event").value;
-    const date = document.getElementById("date").value;
-    const guests = document.getElementById("guests").value;
-    const message = document.getElementById("message").value;
-
-    // Бул жерге бизнес ээсинин WhatsApp номерин жазабыз
-    const whatsappNumber = "996500644600";
-
-    const orderText = `
-🌿 ЭТНО ФУРШЕТ АЛТЫН ДАН
-📩 Жаңы заказ!
-
-👤 Аты: ${name}
-📞 Телефон: ${phone}
-🎉 Иш-чара: ${eventType}
-📅 Дата: ${date}
-👥 Коноктор: ${guests}
-
-📝 Кошумча маалымат:
-${message}
-    `;
-
-    const whatsappURL =
-        "https://wa.me/" + whatsappNumber +
-        "?text=" + encodeURIComponent(orderText);
-
-    window.open(whatsappURL, "_blank");
 });

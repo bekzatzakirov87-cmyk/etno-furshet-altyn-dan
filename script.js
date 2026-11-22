@@ -65,7 +65,7 @@ bookingForm.addEventListener("submit", (event) => {
 
     // Өзүңүздүн WhatsApp номериңизди жазыңыз:
     // Өлкө коду менен, + белгисиз, мисалы 996XXXXXXXXX
-    const whatsappNumber = "996551144351";
+    const whatsappNumber = "996500644600";
 
     const whatsappUrl =
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
@@ -100,7 +100,7 @@ bookingForm.addEventListener("submit", function(event) {
     const message = document.getElementById("message").value;
 
     // Бул жерге бизнес ээсинин WhatsApp номерин жазабыз
-    const whatsappNumber = "996551144351";
+    const whatsappNumber = "996500644600";
 
     const orderText = `
 🌿 ЭТНО ФУРШЕТ АЛТЫН ДАН
